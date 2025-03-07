@@ -1,0 +1,310 @@
+[1:45 ص، 2025/3/7] ETS SADAGA POUR LE CRYPTO: <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ets SADAGA POUR le crypto - متجر العملات الرقمية</title>
+    <style>
+        /* التنسيقات العامة */
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .logo-container {
+            display: flex;
+            ali…
+[1:55 ص، 2025/3/7] ETS SADAGA POUR LE CRYPTO: <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ets SADAGA POUR le crypto - متجر العملات الرقمية</title>
+    <style>
+        /* التنسيقات العامة */
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+        section {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .checkout {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .whatsapp-button img {
+            width: 24px;
+            height: 24px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        #scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #scroll-to-top:hover {
+            background-color: #0056b3;
+        }
+        #notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        .payment-notice {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="شعار Ets SADAGA POUR le crypto" class="logo">
+            <h1>Ets SADAGA POUR le crypto</h1>
+        </div>
+        <p>متجرك الموثوق لشراء وبيع العملات الرقمية</p>
+    </header>
+
+    <!-- قسم المنتجات -->
+    <section>
+        <div class="product">
+            <img src="usdt-icon.png" alt="USDT">
+            <h3>شراء USDT</h3>
+            <p>السعر: 39 MRU لكل USDT</p>
+            <button onclick="showBuyOptions()">شراء</button>
+        </div>
+
+        <div class="product">
+            <img src="usdt-icon.png" alt="USDT">
+            <h3>بيع USDT</h3>
+            <p>السعر: 42 MRU لكل USDT</p>
+            <button onclick="showSellOptions()">بيع</button>
+        </div>
+    </section>
+
+    <!-- قسم السلة -->
+    <div class="checkout">
+        <h2>السلة</h2>
+        <ul id="cart"></ul>
+        <p>المجموع: <span id="total">0</span> MRU</p>
+        <div class="payment-notice">
+            <p>يرجى الدفع من حسابك الخاص. نحن لا ندعم طرف ثالث.</p>
+        </div>
+        <button onclick="checkout()">الدفع</button>
+    </div>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section id="faq">
+        <h2>الأسئلة الشائعة</h2>
+        <div class="faq-item">
+            <h3>كيف أشتري USDT؟</h3>
+            <p>1. اختر الكمية التي تريدها (من 50 إلى 5000 USDT).<br>
+               2. اختر طريقة الدفع المناسبة.<br>
+               3. أرسل صورة إثبات الدفع ورقم هاتفك.<br>
+               4. سنقوم بإرسال USDT إلى محفظتك خلال 24 ساعة.</p>
+        </div>
+        <div class="faq-item">
+            <h3>كيف أبيع USDT؟</h3>
+            <p>1. اختر الكمية التي تريد بيعها (من 100 إلى 5000 USDT).<br>
+               2. سنقوم بإرسال المبلغ إلى حسابك أو محفظتك.<br>
+               3. تأكد من إرسال صورة إثبات الاستلام ورقم هاتفك.</p>
+        </div>
+        <a href="https://wa.me/0022243478953" target="_blank" class="whatsapp-button">
+            <img src="whatsapp-icon.png" alt="واتساب"> تواصل معنا عبر الواتساب
+        </a>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" alt="شعار Ets SADAGA POUR le crypto" class="logo">
+            <p>جميع الحقوق محفوظة &copy; 2023 <span>Ets SADAGA POUR le crypto</span></p>
+        </div>
+    </footer>
+
+    <!-- زر التمرير إلى الأعلى -->
+    <button id="scroll-to-top" title="التمرير إلى الأعلى">↑</button>
+
+    <!-- إشعارات -->
+    <div id="notification" class="hidden">تم إضافة المنتج إلى السلة!</div>
+
+    <!-- JavaScript -->
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function showBuyOptions() {
+            const quantity = prompt('الكمية التي تريد شراءها (من 50 إلى 5000 USDT):');
+            if (quantity >= 50 && quantity <= 5000) {
+                addToCart('شراء USDT', quantity);
+            } else {
+                alert('الكمية غير صالحة. يرجى اختيار كمية بين 50 و5000 USDT.');
+            }
+        }
+
+        function showSellOptions() {
+            const quantity = prompt('الكمية التي تريد بيعها (من 100 إلى 5000 USDT):');
+            if (quantity >= 100 && quantity <= 5000) {
+                addToCart('بيع USDT', quantity);
+            } else {
+                alert('الكمية غير صالحة. يرجى اختيار كمية بين 100 و5000 USDT.');
+            }
+        }
+
+        function addToCart(productName, quantity) {
+            let price = 0;
+            if (productName === 'شراء USDT') {
+                price = quantity * 39; // سعر الشراء: 39 MRU لكل USDT
+            } else if (productName === 'بيع USDT') {
+                price = quantity * 42; // سعر البيع: 42 MRU لكل USDT
+            }
+            cart.push({ name: productName, quantity: quantity, price: price });
+            total += price;
+            updateCart();
+            showNotification('تم إضافة المنتج إلى السلة!');
+        }
+
+        function updateCart() {
+            const cartList = document.getElementById('cart');
+            const totalElement = document.getElementById('total');
+            cartList.innerHTML = '';
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = ${item.name} - الكمية: ${item.quantity} - السعر: ${item.price} MRU;
+                cartList.appendChild(li);
+            });
+            totalElement.textContent = total;
+        }
+
+        function checkout() {
+            alert('شكرًا لشرائك! سيتم التواصل معك قريبًا.');
+            cart = [];
+            total = 0;
+            updateCart();
+        }
+
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+
+        window.onscroll = function() {
+            const button = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        };
+
+        document.getElementById('scroll-to-top').onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
